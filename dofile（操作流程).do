@@ -56,7 +56,7 @@ restore
 ***********************工程确权对总体绩效的影响***********************************
 
 *未添加控制变量
-areg newtotal c.faci_right#c.treat ,robust absorb(id)
+areg newtotal c.faci_right#c.treat i.year,robust absorb(id)
 *添加控制变量 
 areg newtotal c.faci_right#c.treat land_area lanform  nature_vill   first_batch ///
 popu drou_flood_disa rel_econ2 irri_time workers_ratio harmony2 i.association i.first_secretary i.faci_type oper_insti4 total_inves participation_ratio  i.year,robust absorb(id)
@@ -65,7 +65,7 @@ popu drou_flood_disa rel_econ2 irri_time workers_ratio harmony2 i.association i.
 ***********************工程确权对占用绩效的影响***********************************
 
 *未添加控制变量
-areg newf1 c.faci_right#c.treat ,robust absorb(id)
+areg newf1 c.faci_right#c.treat i.year,robust absorb(id)
 *添加控制变量
 areg newf1 c.faci_right#c.treat land_area lanform  nature_vill   first_batch ///
 popu drou_flood_disa rel_econ2 irri_time workers_ratio harmony2 i.association i.first_secretary i.faci_type oper_insti4 total_inves participation_ratio  i.year,robust absorb(id)
@@ -74,7 +74,7 @@ popu drou_flood_disa rel_econ2 irri_time workers_ratio harmony2 i.association i.
 ***********************工程确权对供给绩效的影响***********************************
 
 *未添加控制变量
-areg newf2 c.faci_right#c.treat,robust absorb(id)
+areg newf2 c.faci_right#c.treat i.year,robust absorb(id)
 *添加控制变量
 areg newf2 c.faci_right#c.treat land_area lanform  nature_vill   first_batch ///
 popu drou_flood_disa rel_econ2 irri_time workers_ratio harmony2 i.association i.first_secretary i.faci_type oper_insti4 total_inves participation_ratio  i.year,robust absorb(id)
